@@ -18,5 +18,7 @@
             <img src="<?php header_image(); ?>" width ="<?php echo get_custom_header() -> width ?>" height ="<?php echo get_custom_header() -> height ?>" alt="" />
             <?php endif; ?>
             <!-- ナビゲーションメニューの表示 -->
-            <?php wp_nav_menu(); ?>
+            <div id ="menu">
+                <?php wp_nav_menu(); ?>
+            </div><!-- /menu -->
         </div><!-- /header -->

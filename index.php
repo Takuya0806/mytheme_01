@@ -12,14 +12,12 @@
                 ?>
 
                 <div class ="post">
-                    <div class ="pots-header">
-                        <h2>
-                            <!-- 記事のタイトルとパーマリンクの表示 -->
-                            <a href ="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                        </h2>
+                    <div class ="post-header">
+                        <!-- 記事のタイトルとパーマリンクの表示 -->
+                        <h2><a href ="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                         <div class ="post-meta">
                             <!-- 投稿日とカテゴリーの表示 -->
-                            <?php echo get_the_date(); ?> 【<?php the_category(', '); ?>】
+                            <?php echo get_the_date(); ?> / <?php the_category(', '); ?>
                         </div><!-- /post-meta -->
                     </div><!-- /post-header -->
                     <div class ="post-content">

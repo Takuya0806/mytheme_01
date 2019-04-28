@@ -14,6 +14,11 @@ body {
 
 a {
     text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: #0489B1;
 }
 
 p {
@@ -39,30 +44,32 @@ p {
         padding: 15px 0;
     }
 
-    .menu {
-        background: #f39800;
-        margin-bottom: 30px;
-        font-size: 14px;
-        list-style: none;
-        overflow: hidden;
-        padding: 0;
-    }
+/* menu */
+#menu {
+    background: #084B8A;
+    margin-bottom: 30px;
+    font-size: 14px;
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+}
 
-    .menu li {
-        float: left;
-        width: 150px;
-        text-align: center;
-    }
+#menu li {
+    float: left;
+    width: 150px;
+    text-align: center;
+}
 
-    .menu a {
-        padding: 10px 0;
-        color: #fff;
-        display: block;
-    }
+#menu a {
+    padding: 10px 0;
+    color: #fff;
+    display: block;
+}
 
-    .menu a:hover {
-        background: #ffc35c;
-    }
+#menu a:hover {
+    background: #0174DF;
+    color: #fff;
+}
 
 /* posts */
 #posts {
@@ -79,14 +86,28 @@ p {
     }
 
     .post-header h2 {
-        font-size: 16px;
+        font-size: 20px;
         font-weight: bold;
+    }
+
+    .post-header a {
+        /* font-weight: bold; */
     }
 
     .post-meta {
         font-size: 14px;
         padding: 7px 0;
         color: #555;
+    }
+
+    .post-meta a {
+        color: #555;
+    }
+
+    .post-meta a:hover {
+        border-bottom: 1px solid;
+        padding-bottom: 2px;
+        color: #0489B1;
     }
 
     .post-content {
@@ -123,7 +144,7 @@ p {
 /* sidebar */
 #sidebar {
     float: right;
-    width: 200px;
+    width: 250px;
 }
 
     .widget {
@@ -139,6 +160,85 @@ p {
         line-height: 1.8;
         font-size: 14px;
     }
+
+/*
+カレンダー
+Thought is free
+https://thk.kanzae.net/
+*/
+#sidebar .widget_calendar {
+    margin-bottom: 40px;
+}
+
+table#wp-calendar {
+    table-layout: fixed;
+    width: 100%;
+    margin: 5px auto 0 auto;
+    padding: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 12px;
+}
+
+table#wp-calendar caption {
+    margin: 10px 0 0 0;
+    padding: 10px 0;
+    width: auto;
+    text-align: left;
+    font-weight: bold;
+    font-size: 14px;
+    /* background-color: #fff;
+    border: thin solid #ccc; */
+    /* border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    -webkit-border-radius: 3px 3px 0 0; */
+}
+
+table#wp-calendar #today {
+    /* display: block; */
+    font-weight: bold;
+    background-color: #ffec67;
+    border: thin solid #ccc;
+    /* border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%; */
+    z-index: 1;
+}
+
+table#wp-calendar .pad {
+    font-weight: bold;
+    background-color: #fff9f9;
+}
+
+table#wp-calendar th,
+table#wp-calendar td {
+    padding: 2px auto;
+    vertical-align: middle;
+    text-align: center;
+}
+
+table#wp-calendar td {
+    line-height: 2.5;
+    border: thin solid #ccc;
+    background-color: #fff;
+}
+
+table#wp-calendar th {
+    padding: 2px 0;
+    font-style: normal;
+    font-weight: bold;
+    color: #fff;
+    border-left: thin solid #ccc;
+    border-right: thin solid #ccc;
+    background-color: #333;
+}
+
+table#wp-calendar a {
+    font-size: 12px;
+    color: #00a0dd;
+    padding: 0;
+    text-decoration: underline;
+}
 
 /* footer */
 #footer {
