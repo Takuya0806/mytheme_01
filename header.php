@@ -9,7 +9,14 @@
     </head>
     <body>
         <div id ="header" class ="container">
+            <!-- サイトタイトル -->
             <h1><a href ="<?php echo home_url('/'); ?>"><?php bloginfo('name'); ?></a></h1>
+            <!-- キャッチフレーズ -->
+            <p><?php bloginfo('description'); ?></p>
+            <!-- ヘッダー画像の表示 -->
+            <?php if (get_header_image()) : ?>
+            <img src="<?php header_image(); ?>" width ="<?php echo get_custom_header() -> width ?>" height ="<?php echo get_custom_header() -> height ?>" alt="" />
+            <?php endif; ?>
             <!-- ナビゲーションメニューの表示 -->
             <?php wp_nav_menu(); ?>
         </div><!-- /header -->
