@@ -19,7 +19,7 @@
                         </h2>
                         <div class ="post-meta">
                             <!-- 投稿日とカテゴリーの表示 -->
-                            <?php echo get_the_date(); ?> 【<?php the_category(', '); ?>】
+                            <?php echo get_the_date(); ?> / <?php the_category(', '); ?>
                         </div><!-- /post-meta -->
                     </div><!-- /post-header -->
                     <div class ="post-content">

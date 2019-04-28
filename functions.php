@@ -1,4 +1,5 @@
 <?php
+// ヘッダー画像の設定
 $custom_header_args = array(
     'default-image' => get_template_directory_uri() . '/img/lotus_01.jpg',
     'width' => 1200,
@@ -7,9 +8,9 @@ $custom_header_args = array(
     'flex-width' => true,
     // ヘッダー画像の縦幅を自由に切り取れるかどうか(trueもしくはfalse)
     'flex-height' => true,
-
 );
 
+// 管理画面にヘッダー画像の追加
 add_theme_support('custom-header', $custom_header_args);
 // 管理画面にカスタムメニューの追加
 add_theme_support('menus');
